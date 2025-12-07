@@ -74,10 +74,9 @@ const SiteSetup = () => {
   };
 
   // Dynamically detect backend URL
-  const API =
-    window.location.port === "5173"
-      ? "http://localhost:5000"
-      : window.location.origin;
+ const API =
+  import.meta.env.VITE_BACKEND_URL || "http://localhost:5000";
+
 
   const showAlert = (type, message) => {
     setAlert({ type, message, show: true });

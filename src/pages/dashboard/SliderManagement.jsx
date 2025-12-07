@@ -31,7 +31,7 @@ const SliderManagement = () => {
     try {
       setLoading(true);
       setError('');
-      console.log('Fetching from:', `${backendUrl}/sliders`);
+     
       const response = await axios.get(`${backendUrl}/sliders`);
       console.log('Fetched sliders:', response.data);
       setSliders(response.data.sliders || []);
