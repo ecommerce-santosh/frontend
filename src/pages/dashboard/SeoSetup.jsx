@@ -674,4 +674,4 @@ export default function SeoSetup() {
       </div>
     </div>
   );
-}
+}   
